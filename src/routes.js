@@ -8,9 +8,8 @@ import NotFound from './containers/pages/NotFound';
 
 export const routes = (
   <div>
-    <Route path='/'>
-      <IndexRoute component={Main} />
-      <Route path='/admin' component={List} />
+    <Route path='/' component={Main}>
+      <IndexRoute path='/admin' component={List} />
       <Route path='/add' component={AddItem} />
     </Route>
     <Route path='*' component={NotFound} />
