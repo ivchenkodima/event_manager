@@ -1,12 +1,13 @@
 import { combineReducers } from 'redux';
 
-import add from './add';
+import events from './events';
 
 const reducers = {
-  add,
+  events,
 };
 
-
-const reducer = combineReducers(reducers);
+const reducer = combineReducers({
+  reducers,
+});
 
 export default reducer;

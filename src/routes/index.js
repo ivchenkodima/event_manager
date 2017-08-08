@@ -1,10 +1,10 @@
 import React from 'react'
 import { Route, IndexRoute } from 'react-router'
 
-import Main from './containers/Main';
-import List from './containers/pages/List';
-import AddItem from './containers/pages/AddItem';
-import NotFound from './containers/pages/NotFound';
+import Main from '../containers/Main/index';
+import List from '../containers/pages/List/index';
+import AddItem from '../containers/pages/AddItem/index';
+import NotFound from '../containers/pages/NotFound/index';
 
 export const routes = (
   <div>
@@ -15,3 +15,4 @@ export const routes = (
     <Route path='*' component={NotFound} />
   </div>
 );
+export default routes;
